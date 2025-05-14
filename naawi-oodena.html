@@ -10,18 +10,19 @@
         height: 800px;
         background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
     }
-    image{
+    main image{
         width: 100%;
         height: 100%;
         object-fit: fill;
     }
     #circle-naawi{
-        width: 700px;
-        height: 700px;
+        width: 650px;
+        height: 650px;
         border-radius: 1000px;
         border: #a32d44;
         background-color: #a32d44;
-        translate: -90px -600px;
+        translate: -90px 200px;
+        margin-bottom: 10%;
     }
 
     #circle-naawi p{
@@ -45,23 +46,75 @@
         font-size: 35px;
     }
 
+    #text{
+        padding-top: 10%;
+        padding-bottom: 8%;
+        text-align: right;
+        padding-left: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    #photos-community{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(6, 1fr) );
+        grid-template-columns: repeat(auto-fit, minmax(6, 1fr) );
+        height: 1500px;
+        background-color: #a32d44;
+    }
+
+    #community-img-1{
+        grid-row: 1;
+        width: 350px;
+        height: 350px;
+        border-radius: 1000px;
+        border-width: 0px;
+        /*translate: -300px 100px;*/
+        margin: 5% 10%;
+
+    }
+
+        #community-img-3{
+        grid-row: 3;
+        width: 500px;
+        height: 500px;
+        border-radius: 1000px;
+        border-width: 0px;
+        /*translate: 100px 500px;*/
+        margin: 5% 10%;
+
+    }    #community-img-2{
+        grid-row: 2;
+        width: 250px;
+        height: 250px;
+        border-radius: 1000px;
+        border-width: 0px;
+        /*translate: -300px 100px;*/
+        margin: 5% 10%;
+    }
+
     </style>
 </head>
 <body>
     <main>
     <nav>
-            <div  class="nav-item"><a href="discover-spaces.html" class="nav-item">Explore Spaces</a></div> 
-            <div class="nav-item"><a href="education.html" class="nav-item">Education and Culture</a></div> 
+            <div class="nav-item"><a href="education.html" class="nav-item">Teaching and Recreation</a></div> 
+            <div  class="nav-item"><a href="discover-spaces.html" class="nav-item">Discover Spaces</a></div> 
     </nav>
     <div></div>
+        <Section id="circle-naawi">
+            <h2 id="h2circle">Naawi-Oodena</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </Section>
     </main>
-    <Section id="circle-naawi">
-        <h2 id="h2circle">Naawi-Oodena</h2>
+    <section id="text">
+        <h2>Community</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </Section>
-    <section>
-        <h2 >Naawi-Oodena</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="photos-community">
+        <img id="community-img-1" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+        <img id="community-img-2" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
+        <img id="community-img-3" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png">
     </section>
 </body>
 </html>
