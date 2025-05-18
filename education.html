@@ -4,8 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="CSS/stylesheet.css"/> 
+    <style>
+        /*header*/
+    header{
+        height: 800px;
+        background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
+    }
+    header image{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    /*element style*/
+    h1{
+        align-self: center;
+        color: #ffffff;
+        font-size: 50px;
+    }
+
+
+    #circle-naawi{
+        width: 650px;
+        height: 650px;
+        border-radius: 1000px;
+        border: #a32d44;
+        background-color: #a32d44;
+        display: flex;
+        justify-self: center;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+
+    #h2circle{
+        padding-top: 20%;
+        font-size: 35px;
+    }
+
+    #text{
+        padding-top: 10%;
+        padding-bottom: 8%;
+        text-align: right;
+        padding-left: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    #photos-education{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(2, 1fr) );
+        height: 1800px;
+        background-color: #a32d44;
+
+    }
+
+    #photos-education div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .education-section-img{
+        width: 400px;
+        height: 400px;
+        border-radius: 1000px;
+        border-width: 0px;
+        margin: 4% 10%;
+    }
+
+    #education-img-2{
+        grid-row: 2;
+        float: right;
+    }
+
+    #education-img-3{
+        grid-row: 3;
+        float: left;
+    }
+
+    #education-img-1{
+        grid-row: 1;
+        float: left;
+
+    }
+
+    .gradient-red{
+        width: 100%;
+        height: 600px;
+        background-image: linear-gradient(#a32d44, rgba(0, 0, 0,0));
+        position: absolute;
+        z-index: 2;
+
+    }
+    .image-gradient-section{
+        height: 900px;
+        width: 100%;
+        background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
+        translate: 0px, -100px;
+        position: absolute;
+        
+
+    }
+
+    .flex-container{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        height: 100px;
+        width: 100%;
+    }
+
+    #text-culture-gradient h2{
+        font-size: 28px;
+        padding-top: 15%;
+    }
+        #text-culture-gradient p{
+        font-size: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+        .culture-img-1{
+        width: 200px;
+        height: 200px;
+        border-radius: 1000px;
+        border: solid;
+        border-width: 10px;
+        border-color: #a32d44;
+        margin: 4% 10%;
+        align-self: center;
+
+    }
+
+    #circle-container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10% 2%;
+    }
+/*footer*/
+    footer{
+        background-color: #a32d44;
+        height: 600px;
+        padding-top: 60%;
+    }
+
+    #footer-contacts-circles{
+        width: 50px;
+        height: 50px;
+        border-radius: 1000px;
+        border: solid;
+        border-width: 10px;
+        border-color: #a32d44;
+    }
+
+    #socil-media-circle-container{
+        display: flex;
+        justify-content: right;
+        padding-top: 5%;
+;
+    }
+
+    #footer-spacing-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    #footer-logo-circle{
+        width: 400px;
+        height: 300px;
+        border-width: 0%;
+        border-radius: 5%;
+
+    }
+
+    #circle-embeded-map{
+        border-width: 10px;
+        border-radius: 5%;
+        padding: 1%;
+        background-color:#ffffff;
+    }
+
+    #footer-text{
+    text-align: right;        
+    }
+    </style>
 </head>
 <body>
-    
+    <header>
+    <nav>
+            <div class="nav-item"><a href="education.html" class="nav-item">Teaching and Recreation</a></div> 
+            <div  class="nav-item"><a href="discover-spaces.html" class="nav-item">Discover Spaces</a></div> 
+            <div class="nav-item"><a href="naawi-oodena.html" class="nav-item">Community and culture</a></div> 
+        </nav>
+    <div></div>
+    </header>
+    <section id="photos-education">
+        <h1>Education</h1>
+        <div>
+            <img id="education-img-1" class="education-section-img" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img id="education-img-2" class="education-section-img"  src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"/>
+        </div>
+        <div>
+            <img id="education-img-3" class="education-section-img"  src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    <div class="flex-container">
+    <div class="image-gradient-section"></div>
+    <section class="gradient-red" >
+        <article id="text-culture-gradient">
+        <Section id="circle-naawi">
+            <h2 id="h2circle">Sports and Recreation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </Section>        
+    </section>
+    </div>
+    <footer>
+        <article id="footer-spacing-container">
+            <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png">
+            <ul>
+                <h2 id="footer-text">Contact us</h2>
+                <p id="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div id="footer-text">
+                    <a id="footer-text" src="">Call +0000000</a>
+                    <a id="footer-text" href="https://mail.google.com/">Email us</a>
+                </div>
+                <section id="socil-media-circle-container">
+                    <div><img id="footer-contacts-circles" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></div>
+                    <div><img id="footer-contacts-circles" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></div>
+                    <div><img id="footer-contacts-circles" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"></div>
+                
+            </ul>
+        </article>
+    </footer>
 </body>
 </html>
