@@ -29,12 +29,19 @@ nav {
     text-align: center;
     font-size: 22px;
     cursor: pointer;
-    border-radius: 50px;
-    margin: 10px;
+    border-radius: 500px;
+    padding: 5px;
+    margin: 5px;
     
 
 }
 .nav-item a:hover {
     text-decoration: none;
     cursor: pointer;
+    background-color: #c91b12;
+    border-color: #c91b12;
+    border: solid;
+    border-radius: 500px;
+    padding: 5px;
+    margin: 5px;
 }
