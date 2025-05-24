@@ -1,26 +1,60 @@
+/*this websites colour family is called annalog. In this colour family, accent colours #B1160E, #e14063 are right next to primary colour #9C2C44, the nutruals are white and black and shade #FAFAF7. This makes website really consistant and simple, since it contains many other images that bring more colours. It makes a calm, yet by using shades of red engaging website that doesn't overwhelm.*/
 body{
+    /*defults for all body elements are listed bellow, some of them have additional internall css styling*/
+    /*website has dark colour theme, where text has colour white or #FAFAF7 on black, ensuring possibly best contrast and accesability over 15.8:1. Any other text that has white on red, ensures at least 7:1 contast*/
     background-color: #000000; 
+    /*ensuring that everything is connected tightly to the sides, and that sections unless stated othervise take up the whole space*/
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
+    /*I choose a family of sans serifs with Arial, Helvetica and sans-serif, for this website. I think they're a simple, readible, and accessible, wich is great for my client, as it makes it appealing to broader range of audiance.*/
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
+a{
+    /*links are styled in the same fashion as other text, but have underline and diffrent colour, to keep it visible but consistent*/
+    list-style: none;
+    color: #000000;
+}
+
 p{
     color: white;
+    font-size: 20px;
+    /*paragraph has smaller line height, keeping at standard 120% height of font size*/
+    line-height: 1.2;
+    word-spacing: normal;
 }
 
 h2{
     color: white;
+    /*hierarchy of importance in text is marked by diffrent weight and sizing*/
+    font-weight: bold;
+    font-size: 48px;
+    /*h2 has more line height to make it easier to read and stand  out more*/
+    line-height: 1.5;
+    /*heading font is a bit too wide so I made the word spacing slightly smaller*/
+    word-spacing: -1px;
 }
-
+    #text{
+        /*padding text sections to make it easier to read and for styling purpose*/
+        padding-top: 10%;
+        padding-bottom: 8%;
+        text-align: right;
+        padding-left: 40%;
+        /*margin to space out the section and keep attention to the middle of the website*/
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 20px;
+    }
+/*navigation that stays consitent in all webpages*/
 nav {
     /*mode*/
     overflow: hidden;
     position: fixed;
     top: 0px;
+    /*leaving 2% of null space to ensure elemnts of nav are not sticked to sides and you can read all of them easily*/
     width: 98%;
     background-color: #000000;
     z-index: 3;
@@ -56,6 +90,7 @@ nav {
     .footer-contacts-circles{
         width: 50px;
         height: 50px;
+        /*general border for navigation*/
         border-radius: 1000px;
         border: solid;
         border-width: 10px;

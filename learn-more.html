@@ -9,13 +9,22 @@
         /*styling form elements to make them bigger and change colour, as well as style them more rounded by using border radius*/
         input{
             height: 30px;
-            width: 50%;
+            width: 80%;
             margin: 2%;
             border-radius: 20px;
         }
         label{
             color: #FAFAF7;
             font-size: 20px;
+        }
+        textarea{
+            width: 80%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            resize: none;
+            margin: 2%;
         }
     </style>
 </head>
@@ -39,10 +48,8 @@
                 <h2>Contact us</h2>
                 <label for="email">Email</label><br>
                 <input type="email" name="email" placeholder=" @gmail" /><br>
-                <label for="password">Password</label><br>
-                <input type="password" name="password" placeholder=" ********" /><br>
-                <label for="password check">Confirm Password</label><br>
-                <input type="password" name="password check" placeholder=" Confirm" /><br>
+                <label for="share">Messege</label><br>
+                <textarea name="share" placeholder="share you're messege or questions"></textarea><br>
                 <!--seprate inline css to change colour of only this button and not other inputs-->
                 <input style="background-color: #B1160E;color: #FAFAF7;" type="submit" value="Submit">
             </fieldset>
@@ -54,7 +61,7 @@
             <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png" alt="logo of treaty one, with 2 people shaking hands, one of them wears indigenous clothing and the other modern clothing, they represent mutual respect to each other">
             <ul>
                 <h2 id="footer-text">Contact us</h2>
-                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span style="color: #FAFAF7;"><a style="color: #FAFAF7;" id="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
+                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span style="color: #FAFAF7;"><a style="color: #000000;" id="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
                 </br>
                 <div id="footer-text">
                     <a style="color: #FAFAF7;" class="footer-button" href="learn-more.html" >LEARN MORE SECTION</a>             
