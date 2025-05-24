@@ -16,7 +16,22 @@ body{
 a{
     /*links are styled in the same fashion as other text, but have underline and diffrent colour, to keep it visible but consistent*/
     list-style: none;
+    color: #ffffff;
+}
+
+#footera:visited{
+    list-style: none;
+    color: #ff849e;
+}
+
+#footera:hover{
+    list-style: none;
     color: #000000;
+}
+
+#footera:active{
+    list-style: none;
+    color: #ffffff;
 }
 
 p{
@@ -34,6 +49,15 @@ h2{
     font-size: 48px;
     /*h2 has more line height to make it easier to read and stand  out more*/
     line-height: 1.5;
+    /*heading font is a bit too wide so I made the word spacing slightly smaller*/
+    word-spacing: -1px;
+}
+
+h3{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1.3;
     /*heading font is a bit too wide so I made the word spacing slightly smaller*/
     word-spacing: -1px;
 }
@@ -119,7 +143,7 @@ nav {
         border-radius: 5%;
     }
 
-    #footer-text{
+    .footer-text{
     text-align: right;        
     }
 

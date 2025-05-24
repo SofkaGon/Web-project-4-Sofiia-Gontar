@@ -43,8 +43,12 @@
     }
 
     #photos-education{
+        /*many grid functions such as display require -ms-*/
         display: grid;
+        -ms-display: grid;
         grid-template-rows: repeat(auto-fit, minmax(2, 1fr) );
+        /*prefix -ms-*/
+        -ms-grid-template-rows: repeat(auto-fit, minmax(2, 1fr) );
         height: 1800px;
         background-color: #9C2C44;
 
@@ -70,16 +74,19 @@
 
     #education-img-2{
         grid-row: 2;
+        -ms-grid-row: 2;
         float: right;
     }
 
     #education-img-3{
         grid-row: 3;
+        -ms-grid-row: 3;
         float: left;
     }
 
     #education-img-1{
         grid-row: 1;
+        -ms-grid-row: 1;
         float: left;
 
     }
@@ -88,6 +95,10 @@
         width: 100%;
         height: 600px;
         background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,0));
+        /*CSS property: background-image: Gradient is accessible on all new versions, but some like safari, opera or firefox require prefixe*/
+        -o-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
+        -webkit-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
+        -moz-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
         position: absolute;
         z-index: 2;
 
@@ -143,7 +154,7 @@
     }
 /*padding adjustment for footer helps with making more diverse layouts while keeping resizable layout*/
     footer{
-        padding-top: 60%;
+        padding-top: 870px;
     }
     </style>
 </head>
@@ -160,15 +171,15 @@
     <section id="photos-education">
         <h1>Education</h1>
         <div>
-            <img id="education-img-1" class="education-section-img" src="images/freepik__the-style-is-candid-image-photography-with-natural__22180.png"/>
+            <img alt="A large, welcoming K–12 school surrounded by open space and trees. At the entrance, there’s a small teepee next to the path. A separate small building nearby is used for outdoor classes and activities." id="education-img-1" class="education-section-img" src="images/freepik__the-style-is-candid-image-photography-with-natural__22180.png"/>
             <p>Education: This area includes schools and learning centers that serve the whole community. They are designed to support children and adults in gaining knowledge and skills for the future.</p>
         </div>
         <div>
             <p>Cultural Spaces: There are places dedicated to celebrating Indigenous culture and history. These spaces help keep traditions alive and offer opportunities for sharing stories, art, and ceremonies.</p>
-            <img id="education-img-2" class="education-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__22182.png"/>
+            <img alt="Two traditional teepees stand in the foreground on a grassy area. Behind them, a modern collage building is visible in the distance. The scene blends Indigenous heritage with modern development, showing respect for tradition in a growing urban space" id="education-img-2" class="education-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__22182.png"/>
         </div>
         <div>
-            <img id="education-img-3" class="education-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__2148.png"/>
+            <img alt="A large circular Indigenous cultural museum designed for ceremonies and events. Curved pathways wind through green open space, made for cultural practices like smudging." id="education-img-3" class="education-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__2148.png"/>
             <p>Community Learning: This part supports programs and activities that bring people together to learn from one another and build strong community ties. It encourages respect, understanding, and growth for everyone.</p>
         </div>
     </section>
@@ -184,10 +195,10 @@
     </div>
     <footer>
         <article id="footer-spacing-container">
-            <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png">
+            <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png" alt="The Treaty One logo shows two people shaking hands. This stands for the agreement between First Nations and the government, showing peace, respect, and working together. The logo also has a sun, feathers, or circles to show Indigenous culture.">
             <ul>
                 <h2 id="footer-text">Contact us</h2>
-                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span style="color: #FAFAF7;"><a style="color: #000000;" id="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
+                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span><a id="footera" class="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
                 </br>
                 <div id="footer-text">
                     <a style="color: #FAFAF7;" class="footer-button" href="learn-more.html">LEARN MORE SECTION</a>             

@@ -69,9 +69,14 @@
     }
 
     #residential-grid-container{
+        /*many grid functions such as display require -ms-*/
         display: grid;
+        -ms-display: grid;
         grid-template-rows: repeat(auto-fit, minmax(2, 1fr) );
         grid-template-columns: repeat(auto-fit, minmax(2, 1fr) );
+        /*prefix -ms-*/
+        -ms-grid-template-rows: repeat(auto-fit, minmax(2, 1fr) );
+        -ms-grid-template-columns: repeat(auto-fit, minmax(2, 1fr) );
         row-gap: 5%;
         column-gap: 2%;
     }
@@ -85,26 +90,37 @@
     #residatial-img-1{
         grid-row:1/3 ;
         grid-column: 1/2;
+        /*another grid elemnts that require -ms- are rows and columns*/
+        -ms-grid-row:1/3 ;
+        -ms-grid-column: 1/2;
     }
 
         #residatial-img-2{
         grid-row:1/1 ;
         grid-column: 2/3;
+        -ms-grid-row:1/1 ;
+        -ms-grid-column: 2/3;
     }
 
     #residatial-img-3{
         grid-row:1/2 ;
         grid-column: 3/5;
+        -ms-grid-row:1/2 ;
+        -ms-grid-column: 3/5;       
     }    
 
     #residatial-img-4{
         grid-row:2/2 ;
         grid-column: 2/4;
+        -ms-grid-row:2/2 ;
+        -ms-grid-column: 2/4;
     }   
 
     #residatial-img-5{
         grid-row:2/2 ;
         grid-column: 4/5;
+        -ms-grid-row:2/2 ;
+        -ms-grid-column: 4/5;
     }
 
 /*gradient comercial section*/
@@ -112,6 +128,10 @@
         width: 100%;
         height: 600px;
         background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,0));
+        /*CSS property: background-image: Gradient is accessible on all new versions, but some like safari, opera or firefox require prefixe*/
+        -o-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
+        -webkit-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
+        -moz-background-image: linear-gradient(#9C2C44, rgba(0, 0, 0,/*the last value of 0 is responsible for opacity in the gradient*/0));
         position: absolute;
         z-index: 2;
 
@@ -232,19 +252,25 @@
         <p>Explore Naawi Oodena and experience the connection between where people live, work, and gather. Walk through the residential areas, where thoughtfully designed homes support a strong sense of community and reflect Indigenous values of family and belonging. Visit the commercial spaces, where local businesses, services, and workplaces help grow a self-sustaining economy rooted in opportunity. Then step into the heart of the site, the Mixed Use Village, where culture, commerce, and everyday life come together in a vibrant, welcoming environment. Each space offers something unique, and together they form a complete community that invites everyone to learn, share, and grow.</p>
     </Section>
         <section id="circle-container">
-        <div><img class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__2152.jpeg"><h2 style="padding: 5%;">Residential </h2></div>
-        <div><img class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__35904.png"><h2 style="padding: 5%;">Comercial mixed-use</h2></div>
-        <div><img class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__2146.png"><h2 style="padding: 5%;">Mixed-use village</h2></div>
+        <div><img alt="neighborhood of houses surrounded by trees, with a lake in the distance. The area looks quiet, calm and green." class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__2152.jpeg">
+            <h3 style="padding: 5%;">Residential </h3>
+        </div>
+        <div><img alt="A two-story commercial building painted in bright colors stands near a small pond. People walk along a quiet path lined with flowers, enjoying the peaceful day." class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__35904.png">
+            <h3 style="padding: 5%;">Comercial mixed-use</h3>
+        </div>
+        <div><img alt="An Indigenous store with three offices around it. A green area with a tiny pond is in the middle. Trees and city buildings can be seen far away." class="culture-img-1" src="images/freepik__the-style-is-candid-image-photography-with-natural__2146.png">
+            <h3 style="padding: 5%;">Mixed-use village</h3>
+        </div>
     </section>
         <Section id="residential-text">
         <h2>Residential</h2>
         <p>This zone mostly has single-family homes with yards and more space. It’s quieter and offers more privacy, which suits families and those who want a traditional neighborhood. These homes connect well to parks and community spaces nearby, supporting Indigenous families in creating strong, rooted communities.</p>
         <div id="residential-grid-container">
-            <img id="residatial-img-1" src="images/beautiful-suburban-home-with-green-lawn-blue-sky.jpg">
-            <img id="residatial-img-2" src="images/freepik__the-style-is-candid-image-photography-with-natural__2152.jpeg">
-            <img id="residatial-img-3" src="images/representation-ecology-sustainability.jpg">
-            <img id="residatial-img-4" src="images/freepik__the-style-is-candid-image-photography-with-natural__22183.png">
-            <img id="residatial-img-5" src="images/landscape-with-colorful-rainbow-appearing-sky.jpg">
+            <img alt="A large, modern family home surrounded by a green lawn and trees. The trees bring nature into the urban setting." id="residatial-img-1" src="images/beautiful-suburban-home-with-green-lawn-blue-sky.jpg">
+            <img alt="neighborhood of houses surrounded by trees, with a lake in the distance. The area looks quiet, calm and green." id="residatial-img-2" src="images/freepik__the-style-is-candid-image-photography-with-natural__2152.jpeg">
+            <img alt="A modern street lined with warm, welcoming single-family homes. Lots of greenery surrounds the houses, creating a natural and pleasant living space." id="residatial-img-3" src="images/representation-ecology-sustainability.jpg">
+            <img alt="Many modern two-story homes share open spaces with trees. A canal runs through the center with walking paths, wildlife, and space for canoeing." id="residatial-img-4" src="images/freepik__the-style-is-candid-image-photography-with-natural__22183.png">
+            <img alt="A peaceful setting with a big, comfortable family home and a spacious backyard. A rainbow arches across the quiet sky." id="residatial-img-5" src="images/landscape-with-colorful-rainbow-appearing-sky.jpg">
         </div>
     </Section>
         <div class="flex-container">
@@ -262,22 +288,22 @@
         <h2>Village</h2>
         <div id="village-text">
             <p>This area brings together homes, shops, offices, and community spaces in one place. It’s designed to be walkable and lively, with shops and services on the ground floor and homes or offices above. This helps create a friendly neighborhood where people can live, work, and connect easily. It also supports easy access to public transit. For Indigenous communities, this space offers opportunities for economic growth, cultural expression, and community gathering within a shared urban environment.</p>
-            <img id="villagw-img-2" class="village-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__2146.png"/>
+            <img alt="An Indigenous store with three offices around it. A green area with a tiny pond is in the middle. Trees and city buildings can be seen far away." id="villagw-img-2" class="village-section-img"  src="images/freepik__the-style-is-candid-image-photography-with-natural__2146.png"/>
         </div>    
     </article>
 
     <footer>
         <article id="footer-spacing-container">
-            <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png">
+            <img id="footer-logo-circle" src="https://treaty1.ca/wp-content/uploads/2021/11/TREATY-ONE-DEV-CORP-LOGO-2019-768x639.png" alt="The Treaty One logo shows two people shaking hands. This stands for the agreement between First Nations and the government, showing peace, respect, and working together. The logo also has a sun, feathers, or circles to show Indigenous culture.">
             <ul>
                 <h2 id="footer-text">Contact us</h2>
-                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span style="color: #FAFAF7;"><a style="color: #000000;" id="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
+                <p id="footer-text">Naawi-Oodena aimes to bring indigenous cultures into a modern-urban reserve. We hope to spread and celebrate diverse indigenous cultures, and bring people together. To discover more visit <span><a id="footera" class="footer-text" href="https://www.clc-sic.ca/sites/default/files/documents/Kapyong%20Barracks%20Master%20Plan_EN_accessible-avec%20compression.pdf" target="_blank">visit our masterplan</a></span> that all this websites captured information is based on. All images have been generated through AI by describing our vison that we hope to bring in the future. </p>
                 </br>
                 <div id="footer-text">
                     <a style="color: #FAFAF7;" class="footer-button" href="learn-more.html">LEARN MORE SECTION</a>             
                 </div>
                 <section id="socil-media-circle-container">
-                    <!--animation using function is something new I learne=d before we covered it in new unit link to tutorial https://www.w3schools.com/jsref/event_onmouseenter.asp-->
+                    <!--animation using function is something new I learne=d before we covered it in new unit-->
                     <div><a href="https://x.com/"><!--this is a way to animate and make website interactive using js--><!--// is a way to comment in java script for one line, but in case as this one you use /**/ --><img onmouseover="/*onmouseover works simmilar to hoover but it won't change back when mouse leaves unless you include another elemnt called onmouseleave*/document.getElementById/*getElementById helps to connect js with element*/('twitter-icon')./*.src allows you to change element into diffrent image*/src='images/4.png'" id="twitter-icon" class="footer-contacts-circles" onmouseleave="document.getElementById('twitter-icon').src='images/1.png'" src="images/1.png"></a></div>
                     <div><a href="https://www.instagram.com/"><img  onmouseover="document.getElementById('insta-icon').src='images/6.png'" id="insta-icon" class="footer-contacts-circles" onmouseleave="document.getElementById('insta-icon').src='images/3.png'" src="images/3.png"></a></div>
                     <div><a href="https://www.youtube.com/"><img onmouseover="document.getElementById('youtube-icon').src='images/5.png'" id="youtube-icon" class="footer-contacts-circles" onmouseleave="document.getElementById('youtube-icon').src='images/2.png'" src="images/2.png"></a></div>                
